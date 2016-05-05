@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+# -----------
+
+cd "$(dirname "$0")/.."
+
+# -----------
+
+rm -rf dist
+mkdir dist
+
+# -----------
+
+cd public
+
+node ../node_modules/.bin/jspm bundle app/index.ts ../dist/app.js
+
+cd ..

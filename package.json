@@ -1,0 +1,30 @@
+{
+  "name": "jspm-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "configFiles": {
+      "jspm:browser": "public/jspm.browser.js",
+      "jspm": "public/config.js"
+    },
+    "directories": {
+      "baseURL": "public"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    },
+    "buildConfig": {
+      "transpileES6": true,
+      "minify": false
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.34"
+  }
+}
