@@ -4,27 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "jspm bundle-sfx ./src ./dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "jspm": {
-    "configFiles": {
-      "jspm:browser": "public/jspm.browser.js",
-      "jspm": "public/config.js"
-    },
     "directories": {
-      "baseURL": "public"
+      "baseURL": "src"
+    },
+    "configFile": "src/jspm.config.js",
+    "dependencies": {
+      "jquery": "npm:jquery@^2.2.3",
+      "lodash": "npm:lodash@^4.12.0",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.10",
+      "ts": "github:frankwallis/plugin-typescript@^4.0.10"
     },
     "devDependencies": {
-      "typescript": "npm:typescript@^1.6.2"
-    },
-    "buildConfig": {
-      "transpileES6": true,
-      "minify": false
+      "plugin-babel-runtime": "npm:babel-runtime@^5.8.24",
+      "ts-runtime": "npm:babel-runtime@^5.8.24"
     }
   },
   "devDependencies": {
+    "browser-sync": "^2.12.8",
     "jspm": "^0.16.34"
   }
 }

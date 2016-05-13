@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+# -----------
+
+cd "$(dirname "$0")/.."
+
+# -----------
+
+node node_modules/.bin/browser-sync start --server dist
+
+# -----------

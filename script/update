@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# -----------
+
+cd "$(dirname "$0")/.."
+
+# -----------
+
+npm install
+node node_modules/.bin/jspm install
+
+# -----------
