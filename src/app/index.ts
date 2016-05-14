@@ -1,12 +1,9 @@
 /// <reference path="../typings/tsd.d.ts" />
 
-'use strict';
-
 import Car from './car';
 import * as _ from 'lodash';
-import * as $ from 'jquery';
-
 
 var c = new Car('toyota', 'rav4');
 
-console.log(c.make);
+console.log(_.add(2,2));
+console.log(`${c.make} ${c.model}`);
