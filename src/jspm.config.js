@@ -3,11 +3,9 @@ System.config({
   transpiler: "ts",
   typescriptOptions: {
     "module": "system",
-    "target": "es5",
     "typeCheck": "strict",
     "tsconfig": true,
     "sourceMap": true,
-    "removeComments": false,
     "supportHtmlImports": true
   },
 
