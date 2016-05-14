@@ -12,8 +12,6 @@ mkdir dist
 
 # -----------
 
-# node node_modules/.bin/jspm build ./src/app/index ./dist/app.js --format cjs --minify --no-mangle
-
 node node_modules/.bin/jspm build ./src/app/index ./dist/app.js  --skip-source-maps --format global
 
 cp src/index.bundled.html dist/index.html

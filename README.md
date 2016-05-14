@@ -6,22 +6,15 @@ Test for getting JSPM bundling working with typescript
 Why is `jquery` / `lodash` not importing?
 
 
-## Steps
+## ES6 Module Notes
 
-### 1. Update Packages
+- When importing jQuery,because it's a global function it cannot be imported normally (`import * as $ from 'jquery'`)
+
+
+## Scripts
 
 ```
 sh script/update
-```
-
-### 2. Build
-
-```
 sh script/build
-```
-
-### 3. Server
-
-```
 sh script/server
 ```
