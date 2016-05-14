@@ -5,15 +5,6 @@
   "license": "MIT",
   "description": "A sample project for building JSPM 0.17, with typescript",
   "main": "index.js",
-  "dependencies": {
-    "jquery": "^2.2.3",
-    "lodash": "^4.12.0",
-    "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.10"
-  },
-  "peerDependencies": {
-    "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
-    "os": "github:jspm/nodelibs-os@^0.2.0-alpha"
-  },
   "scripts": {
     "start": "sh -c 'script/server'",
     "build": "sh -c 'script/build'",
@@ -28,6 +19,15 @@
     },
     "configFile": "src/jspm.config.js",
     "overrides": {
+      "github:angular/bower-angular@1.5.5": {
+        "main": "angular",
+        "meta": {
+          "angular.js": {
+            "exports": "angular",
+            "format": "global"
+          }
+        }
+      },
       "npm:bluebird@3.3.5": {
         "meta": {
           "js/browser/bluebird.js": {
@@ -107,6 +107,17 @@
         }
       }
     }
+  },
+  "dependencies": {
+    "angular": "github:angular/bower-angular@^1.5.5",
+    "jquery": "^2.2.3",
+    "lodash": "^4.12.0",
+    "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.10",
+    "text": "github:systemjs/plugin-text@^0.0.8"
+  },
+  "peerDependencies": {
+    "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
+    "os": "github:jspm/nodelibs-os@^0.2.0-alpha"
   },
   "devDependencies": {
     "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",

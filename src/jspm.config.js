@@ -42,6 +42,7 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
+    "angular": "github:angular/bower-angular@1.5.5",
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
     "browser-sync": "npm:browser-sync@2.12.8",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
@@ -72,6 +73,7 @@ SystemJS.config({
     "readline": "github:jspm/nodelibs-readline@0.2.0-alpha",
     "stream": "github:jspm/nodelibs-stream@0.2.0-alpha",
     "string_decoder": "github:jspm/nodelibs-string_decoder@0.2.0-alpha",
+    "text": "github:systemjs/plugin-text@0.0.8",
     "tls": "github:jspm/nodelibs-tls@0.2.0-alpha",
     "tty": "github:jspm/nodelibs-tty@0.2.0-alpha",
     "tweetnacl": "npm:tweetnacl@0.13.3",

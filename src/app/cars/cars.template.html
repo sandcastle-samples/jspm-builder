@@ -1,0 +1,7 @@
+<div ng-repeat="car in $ctrl.cars track by $index" style="border: 1px solid #ccc; margin-bottom: 10px;">
+  <p>Make: {{::car.make}}</p>
+  <p>Model: {{::car.model}}</p>
+</div>
+<button ng-click="$ctrl.create('a', 'b')">
+  Create
+</button>

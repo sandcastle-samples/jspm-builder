@@ -1,9 +1,11 @@
 /// <reference path="../typings/tsd.d.ts" />
+import * as angular from 'angular';
+import { carsModule } from './cars/cars.module';
 
-import Car from './car';
-import * as _ from 'lodash';
+export default angular.module('cars', [
+  carsModule.name
+]);
 
-var c = new Car('toyota', 'rav4');
-
-console.log(_.add(2,2));
-console.log(`${c.make} ${c.model}`);
+angular.bootstrap(document.documentElement, [
+  'cars'
+]);
